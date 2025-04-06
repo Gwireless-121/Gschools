@@ -1,0 +1,45 @@
+{
+    "type": "object",
+    "properties": {
+        "options": {
+            "title": "Configuration Options",
+            "type": "object",
+            "properties": {
+                "agentToken": {
+                    "title": "Agent Token",
+                    "description": "Token that protects access to this Chromebook.",
+                    "type": "string"
+                },
+                "cloudAccount": {
+                    "title": "Cloud Account",
+                    "description": "Client Account name",
+                    "type": "string"
+                },
+                "cloudAccountToken": {
+                    "title": "Cloud Account Token",
+                    "description": "Cloud Account Token for adding this Chromebook to the Cloud",
+                    "type": "string"
+                },
+                "consoles": {
+                    "title": "Admin Consoles for Reverse Connection",
+                    "description": "Array of Admin Consoles that can monitor this Chromebook",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "host": {
+                                "type": "string"
+                            },
+                            "port": {
+                                "type": "integer"
+                            },
+                            "token": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

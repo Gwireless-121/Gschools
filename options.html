@@ -1,0 +1,228 @@
+
+<html>
+<style type="text/css">
+.form-style-10 {
+	width: 650px;
+	padding: 30px;
+	margin: 20px auto;
+	background: #FFF;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+.form-style-10 .inner-wrap {
+	padding: 30px;
+	background: #F8F8F8;
+	border-radius: 6px;
+	margin-bottom: 15px;
+}
+.form-style-10 h1 {
+	background: #2A88AD;
+	padding: 20px 30px 15px 30px;
+	margin: -30px -30px 30px -30px;
+	border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+}
+.form-style-10 h1 > span {
+	display: block;
+	margin-top: 2px;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+.form-style-10 label {
+	display: block;
+	font: 13px Arial, Helvetica, sans-serif;
+	color: #888;
+	margin-bottom: 15px;
+}
+.form-style-10 input[type="text"], .form-style-10 input[type="date"], .form-style-10 input[type="datetime"], .form-style-10 input[type="email"], .form-style-10 input[type="number"], .form-style-10 input[type="search"], .form-style-10 input[type="time"], .form-style-10 input[type="url"], .form-style-10 input[type="password"], .form-style-10 textarea, .form-style-10 select {
+	display: block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 8px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border: 2px solid #fff;
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
+.form-style-10 .section {
+	font: normal 20px 'Bitter', serif;
+	color: #2A88AD;
+	margin-bottom: 5px;
+}
+.form-style-10 .section span {
+	background: #2A88AD;
+	padding: 5px 10px 5px 10px;
+	position: absolute;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border: 4px solid #fff;
+	font-size: 14px;
+	margin-left: -45px;
+	color: #fff;
+	margin-top: -3px;
+}
+.form-style-10 input[type="button"], .form-style-10 input[type="submit"] {
+	background: #2A88AD;
+	padding: 8px 20px 8px 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+	font-size: 15px;
+}
+.form-style-10 input[type="button"]:hover, .form-style-10 input[type="submit"]:hover {
+	background: #2A6881;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+.form-style-10 .privacy-policy {
+	float: right;
+	width: 250px;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #4D4D4D;
+	margin-top: 10px;
+	text-align: right;
+}
+</style>
+<head>
+</head>
+<body>
+<div class="form-style-10">
+  <h1 id="application_name">Options</h1>  
+  <form>
+  
+  	<div id="open_configuration">
+    <div class="section">Enter Agent Password to open the configuration</div>
+    <div class="inner-wrap">
+      <label>Agent Password
+        <input type="password" id="configurationPassword" />
+      </label>
+      <div class="button-section">
+      <input id="open_button" type="button" value="Open configuration" />
+    </div>
+    </div>
+    </div>
+	
+    <div id="agent_configuration" style="display:none">
+    <div class="section">Agent Configuration</div>
+    <div class="inner-wrap">
+      <label>Client Name:
+        <input type="text" id="clientName" />
+      </label>
+      <label>Unique Computer Id (e.g. MAC Address):
+        <input type="text" id="machineId" />
+      </label>
+      <label>Agent Password:
+        <input type="password" id="agentPassword" />
+      </label>
+      <label>Confirm Agent Password:
+        <input type="password" id="confirmAgentPassword" />
+      </label>
+	  <label>
+	  <label>Connection Type:</label>
+	  <label>
+        <input type="checkbox" id="cloud_connection_checkbox"/> Use Cloud connection (connect via the Internet)
+      </label>
+	  <label>
+        <input type="checkbox" id="reverse_connection_checkbox"/>Use reverse connection - console acts as a server (connect via local network - LAN/WLAN)
+      </label>
+    </div>
+	
+	<div id="cloudConfiguration" style="display:none">
+    <div class="section">Cloud Configuration</div>
+    <div class="inner-wrap">
+      <label>Cloud Account:
+        <input type="text" id="cloudAccount" />
+      </label>
+      <label>Cloud Account Password:
+        <input type="password" id="cloudAccountPassword" />
+      </label>
+    </div>
+	</div>
+	
+	<div id="console_1" style="display:none"> <br>
+      <div class="section"><span id="console_no_1" style="display:none">1</span>Connect to the Console - Run Reverse Connection Server on the Console</div>
+      <span><i>(Configure under Console Menu: Server/Configure Console Reverse Connection Server)</i></span>
+      <div class="inner-wrap">
+        <label>Console IP or Host (IP is preferred - use Host only in case you have a DNS):
+          <input type="text" id="consoleHost_1" />
+        </label>
+        <label>Password:
+          <input type="password" id="consolePassword_1" />
+        </label>
+        <label>Port:
+          <input type="text" id="consolePort_1" value="444"/>
+        </label>
+      </div>
+      <input type="button" id="add_console_2_button" value="+ Add an additional Console to connect" />
+      <input type="button" id="remove_console_2_button" style="display:none" value="- Remove an additional Console" />
+	</div>
+	
+    <div id="console_2" style="display:none"> <br>
+      <div class="section"><span id="console_no_2">2</span>Connect to the Console - Run Reverse Connection Server on the Console</div>
+      <span><i>(Configure under Console Menu: Server/Configure Console Reverse Connection Server)</i></span>
+      <div class="inner-wrap">
+        <label>Console IP or Host (IP is preferred - use Host only in case you have a DNS):
+        <input type="text" id="consoleHost_2" />
+      </label>
+      <label>Password:
+        <input type="password" id="consolePassword_2" />
+      </label>      
+      <label>Port:
+        <input type="text" id="consolePort_2" />
+      </label>
+      </div>
+      <input type="button" id="add_console_3_button" value="+ Add an additional Console to connect" />
+      <input type="button" id="remove_console_3_button" style="display:none" value="- Remove an additional Console" />
+    </div>
+	
+    <div id="console_3" style="display:none"> <br>
+      <div class="section"><span>3</span>Connect to the Console - Run Reverse Connection Server on the Console</div>
+      <span><i>(Configure under Console Menu: Server/Configure Console Reverse Connection Server)</i></span>
+      <div class="inner-wrap">
+       <label>Console IP or Host (IP is preferred - use Host only in case you have a DNS):
+        <input type="text" id="consoleHost_3" />
+      </label>
+      <label>Password:
+        <input type="password" id="consolePassword_3" />
+      </label>      
+      <label>Port:
+        <input type="text" id="consolePort_3" />
+      </label>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="button-section">
+      <input id="save_button" type="button" value="Save configuration" />
+    </div>
+  </form>
+</div>
+<script src="options.js"></script>
+</body>
+</html>
